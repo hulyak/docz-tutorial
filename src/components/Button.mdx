@@ -1,19 +1,24 @@
 ---
----
 name: Button
 route: /
+menu: ButtonComponent
 ---
 
 import { Playground, Props } from "docz";
-import { Button } from "./";
+import { Button } from "./Button";
 
 # Button
+
+ <Button color="primary" size="large" onClick={() => console.log("Hello world")}>
+  Click me
+</Button> 
 
 <Props of={Button} />
 
 ## Basic usage
 
 <Playground>
-  <Button>Click me</Button>
-  <Button kind="secondary">Click me</Button>
+  <Button color="primary" size="large">
+    Click me
+  </Button>
 </Playground>
